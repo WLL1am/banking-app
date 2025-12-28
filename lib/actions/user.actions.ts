@@ -52,10 +52,11 @@ export const signIn = async ({ email, password }: signInProps) => {
 
 export const signUp = async ({ password, ...userData}: SignUpParams) => {
     const { email, firstName, lastName } = userData;
+    let newUserAccount;
+
     try {
         const { account, database } = await createAdminClient();
 
-        let newUserAccount;
 
         newUserAccount = await account.create(
             ID.unique(), 
@@ -110,6 +111,7 @@ export async function getLoggedInUser() {
 
         return parseStringify(user);
     } catch (error) {
+        console.log(error)
         return null;
     }
 }
@@ -173,7 +175,7 @@ export const createBankAccount = async ({
 
         return parseStringify(bankAccount);
     } catch (error) {
-        
+        console.log(error)
     }
 }
 
