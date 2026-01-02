@@ -1,3 +1,5 @@
+import { IncomeBreakdownType } from "plaid";
+
 export const sidebarLinks = [
   {
     imgURL: "/icons/home.svg",
@@ -92,52 +94,152 @@ export const topCategoryStyles = {
 };
 
 export const transactionCategoryStyles = {
-  "Food and Drink": {
+  FOOD_AND_DRINK: {
+    name: "Food and Drink",
     borderColor: "border-pink-600",
     backgroundColor: "bg-pink-500",
     textColor: "text-pink-700",
     chipBackgroundColor: "bg-inherit",
   },
-  Payment: {
+  INCOME: {
+    name: "Income",
     borderColor: "border-success-600",
     backgroundColor: "bg-green-600",
     textColor: "text-success-700",
     chipBackgroundColor: "bg-inherit",
   },
-  "Bank Fees": {
+  LOAN_DISBURSEMENTS: {
+    name: "Loan Disbursements",
     borderColor: "border-success-600",
     backgroundColor: "bg-green-600",
     textColor: "text-success-700",
+    chipBackgroundColor: "bg-inherit",
+  },
+  LOAN_PAYMENTS: {
+    name: "Loan Payments",
+    borderColor: "border-success-600",
+    backgroundColor: "bg-green-600",
+    textColor: "text-success-700",
+    chipBackgroundColor: "bg-inherit",
+  },
+  BANK_FEES: {
+    name: "Bank Fees",
+    borderColor: "border-success-600",
+    backgroundColor: "bg-green-600",
+    textColor: "text-success-700",
+    chipBackgroundColor: "bg-inherit",
+  },
+  TRANSFER_IN: {
+    name: "Transfer",
+    borderColor: "border-red-700",
+    backgroundColor: "bg-red-700",
+    textColor: "text-red-700",
+    chipBackgroundColor: "bg-inherit",
+  },
+  TRANSFER_OUT: {
+    name: "Transfer",
+    borderColor: "border-red-700",
+    backgroundColor: "bg-red-700",
+    textColor: "text-red-700",
     chipBackgroundColor: "bg-inherit",
   },
   Transfer: {
+    name: "Transfer",
     borderColor: "border-red-700",
     backgroundColor: "bg-red-700",
     textColor: "text-red-700",
     chipBackgroundColor: "bg-inherit",
   },
   Processing: {
+    name: "Processing",
     borderColor: "border-[#F2F4F7]",
     backgroundColor: "bg-gray-500",
     textColor: "text-[#344054]",
     chipBackgroundColor: "bg-[#F2F4F7]",
   },
   Success: {
+    name: "Success",
     borderColor: "border-[#12B76A]",
     backgroundColor: "bg-[#12B76A]",
     textColor: "text-[#027A48]",
     chipBackgroundColor: "bg-[#ECFDF3]",
   },
-  Travel: {
+  
+  TRAVEL: {
+    name: "Travel",
     borderColor: "border-[#0047AB]",
     backgroundColor: "bg-blue-500",
     textColor: "text-blue-700",
     chipBackgroundColor: "bg-[#ECFDF3]",
   },
-  default: {
+  TRANSPORTATION: {
+    name: "Transportation",
+    borderColor: "border-[#0047AB]",
+    backgroundColor: "bg-blue-500",
+    textColor: "text-blue-700",
+    chipBackgroundColor: "bg-[#ECFDF3]",
+  },
+  OTHER: {
+    name: "Other",
     borderColor: "",
     backgroundColor: "bg-blue-500",
     textColor: "text-blue-700",
+    chipBackgroundColor: "bg-inherit",
+  },
+  ENTERTAINMENT: {
+    name: "Entertainment",
+    borderColor: "border-pink-600",
+    backgroundColor: "bg-pink-500",
+    textColor: "text-pink-700",
+    chipBackgroundColor: "bg-inherit",
+  },
+  GENERAL_MERCHANDISE: {
+    name: "General Merchandise",
+    borderColor: "border-pink-600",
+    backgroundColor: "bg-pink-500",
+    textColor: "text-pink-700",
+    chipBackgroundColor: "bg-inherit",
+  },
+  HOME_IMPROVEMENT: {
+    name: "Home Improvement",
+    borderColor: "border-success-600",
+    backgroundColor: "bg-green-600",
+    textColor: "text-success-700",
+    chipBackgroundColor: "bg-inherit",
+  },
+  MEDICAL: {
+    name: "Medical",
+    borderColor: "border-success-600",
+    backgroundColor: "bg-green-600",
+    textColor: "text-success-700",
+    chipBackgroundColor: "bg-inherit",
+  },
+  PERSONAL_CARE: {
+    name: "Personal Care",
+    borderColor: "border-success-600",
+    backgroundColor: "bg-green-600",
+    textColor: "text-success-700",
+    chipBackgroundColor: "bg-inherit",
+  },
+  GENERAL_SERVICES: {
+    name: "General Services",
+    borderColor: "border-success-600",
+    backgroundColor: "bg-green-600",
+    textColor: "text-success-700",
+    chipBackgroundColor: "bg-inherit",
+  },
+  GOVERNMENT_AND_NON_PROFIT: {
+    name: "Gov / Non-Profit",
+    borderColor: "border-success-600",
+    backgroundColor: "bg-green-600",
+    textColor: "text-success-700",
+    chipBackgroundColor: "bg-inherit",
+  },
+  RENT_AND_UTILITIES: {
+    name: "Rent & Utilities",
+    borderColor: "border-success-600",
+    backgroundColor: "bg-green-600",
+    textColor: "text-success-700",
     chipBackgroundColor: "bg-inherit",
   },
 };

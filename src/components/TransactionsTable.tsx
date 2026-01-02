@@ -12,16 +12,17 @@ import { transactionCategoryStyles } from "../../constants"
 
 const CategoryBadge = ({ category }: CategoryBadgeProps) => {
   const {
+    name,
     borderColor,
     backgroundColor,
     textColor,
     chipBackgroundColor,
-   } = transactionCategoryStyles[category as keyof typeof transactionCategoryStyles] || transactionCategoryStyles.default
+   } = transactionCategoryStyles[category as keyof typeof transactionCategoryStyles] || transactionCategoryStyles.OTHER
    
   return (
     <div className={cn('category-badge', borderColor, chipBackgroundColor)}>
       <div className={cn('size-2 rounded-full', backgroundColor)} />
-      <p className={cn('text-[12px] font-medium', textColor)}>{category}</p>
+      <p className={cn('text-[12px] font-medium', textColor)}>{category ? name : "None"}</p>
     </div>
   )
 } 
