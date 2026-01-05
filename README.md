@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Introduction
 
-## Getting Started
+GitHub Plus is a full-stack platform designed to enhance the GitHub workflow with AI-powered tools, developer utilities, and a modern, component-driven interface.  
+Built with **Next.js**, the **T3 Stack**, and integrations like **LangChain** and **Google AI**, it delivers a fast, intelligent, and efficient developer experience.
 
-First, run the development server:
+If you need help getting started or run into issues, our community Discord is an active space where developers collaborate and provide support.
+
+<a href="https://discord.com/invite/n6EdbFJ" target="_blank">
+  <img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" />
+</a>
+
+---
+
+## Tech Stack
+
+- **Next.js**
+- **TypeScript**
+- **T3 Stack**
+- **Prisma**
+- **tRPC**
+- **Clerk Authentication**
+- **LangChain**
+- **Google AI**
+- **TailwindCSS**
+- **shadcn/ui**
+- **React Hook Form + Zod**
+
+---
+
+## Features
+
+**AI-Enhanced Developer Tools**  
+Generate explanations, summaries, code insights, and more directly inside the platform.
+
+**GitHub Integration**  
+Fetch repositories, analyze code, and interact with GitHub data through a unified interface.
+
+**Project Dashboard**  
+View insights, recent activity, and AI-generated summaries for your repositories.
+
+**Secure Authentication**  
+Powered by Clerk with full SSR support.
+
+**Modern UI/UX**  
+Built with shadcn/ui and TailwindCSS for a clean, responsive interface.
+
+**Extensible Architecture**  
+Component-driven, reusable structure following T3 best practices.
+
+…and more, with ongoing improvements and new features planned.
+
+---
+
+## Quick Start
+
+Follow these steps to run the project locally.
+
+### **Prerequisites**
+
+Make sure you have:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/)
+- A package manager (npm, pnpm, or bun)
+
+---
+
+### **Cloning the Repository**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/<your-username>/githubplus.git
+cd githubplus
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **Install Dependencies**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Create a .env file following the sample in the project root:
+```bash
+# NEXT
+NEXT_PUBLIC_APP_URL=
 
-## Learn More
+# CLERK
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
-To learn more about Next.js, take a look at the following resources:
+# DATABASE
+DATABASE_URL=
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# AI
+GOOGLE_API_KEY=
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### **Running the Project**
+```bash
+npm run dev
+```
 
-## Deploy on Vercel
+Your application will be available at:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+http://localhost:3000
