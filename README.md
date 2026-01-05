@@ -3,12 +3,6 @@
 GitHub Plus is a full-stack platform designed to enhance the GitHub workflow with AI-powered tools, developer utilities, and a modern, component-driven interface.  
 Built with **Next.js**, the **T3 Stack**, and integrations like **LangChain** and **Google AI**, it delivers a fast, intelligent, and efficient developer experience.
 
-If you need help getting started or run into issues, our community Discord is an active space where developers collaborate and provide support.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank">
-  <img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" />
-</a>
-
 ---
 
 ## Tech Stack
