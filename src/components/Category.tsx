@@ -9,7 +9,6 @@ const TOP_CATEGORY_STYLE_KEY_MAP: Record<
   string,
   keyof typeof topCategoryStyles
 > = {
-  // Existing
   FOOD_AND_DRINK: "Food and Drink",
 
   // Travel group
@@ -59,8 +58,8 @@ const CATEGORY_LABEL_MAP: Record<string, string> = {
   LOAN_PAYMENTS: "Loan Payments",
   LOAN_DISBURSEMENTS: "Loan Disbursements",
 
-  TRANSFER_IN: "Transfer",
-  TRANSFER_OUT: "Transfer",
+  TRANSFER_IN: "Transfer In",
+  TRANSFER_OUT: "Transfer Out",
 };
 
 const Category = ({ category }: CategoryProps) => {
