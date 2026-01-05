@@ -1,7 +1,6 @@
 ## Introduction
 
-GitHub Plus is a full-stack platform designed to enhance the GitHub workflow with AI-powered tools, developer utilities, and a modern, component-driven interface.  
-Built with **Next.js**, the **T3 Stack**, and integrations like **LangChain** and **Google AI**, it delivers a fast, intelligent, and efficient developer experience.
+Unity is a financial SaaS platform built with Next.js. It links multiple bank accounts, displays real-time transactions, enables user-to-user transfers, and provides a unified interface for managing personal finances.
 
 ---
 
@@ -9,13 +8,11 @@ Built with **Next.js**, the **T3 Stack**, and integrations like **LangChain** an
 
 - **Next.js**
 - **TypeScript**
-- **T3 Stack**
-- **Prisma**
-- **tRPC**
-- **Clerk Authentication**
-- **LangChain**
-- **Google AI**
+- **Appwrite**
+- **Plaid**
+- **Dwolla**
 - **TailwindCSS**
+- **Chart.js**
 - **shadcn/ui**
 - **React Hook Form + Zod**
 
@@ -23,25 +20,15 @@ Built with **Next.js**, the **T3 Stack**, and integrations like **LangChain** an
 
 ## Features
 
-**AI-Enhanced Developer Tools**  
-Generate explanations, summaries, code insights, and more directly inside the platform.
-
-**GitHub Integration**  
-Fetch repositories, analyze code, and interact with GitHub data through a unified interface.
-
-**Project Dashboard**  
-View insights, recent activity, and AI-generated summaries for your repositories.
-
-**Secure Authentication**  
-Powered by Clerk with full SSR support.
-
-**Modern UI/UX**  
-Built with shadcn/ui and TailwindCSS for a clean, responsive interface.
-
-**Extensible Architecture**  
-Component-driven, reusable structure following T3 best practices.
-
-…and more, with ongoing improvements and new features planned.
+- **Authentication**: Server-side authentication with strict validation and authorization.  
+- **Bank Connections**: Plaid integration for linking multiple bank accounts.  
+- **Dashboard**: Aggregated balance, recent transactions, and categorized spending insights.  
+- **My Banks**: Full list of connected accounts with balances and details.  
+- **Transaction History**: Pagination and filtering across all linked institutions.  
+- **Real-Time Sync**: Immediate updates throughout the app when new accounts are added.  
+- **Funds Transfer**: Dwolla-powered transfers with required fields and recipient bank verification.  
+- **Responsive UI**: Consistent experience across desktop, tablet, and mobile.  
+- Additional improvements in architecture, modularity, and code reusability.
 
 ---
 
@@ -62,8 +49,8 @@ Make sure you have:
 ### **Cloning the Repository**
 
 ```bash
-git clone https://github.com/<your-username>/githubplus.git
-cd githubplus
+git clone https://github.com/WLL1am/banking-app.git
+cd banking-app
 ```
 
 ### **Install Dependencies**
@@ -76,17 +63,29 @@ npm install
 Create a .env file following the sample in the project root:
 ```bash
 # NEXT
-NEXT_PUBLIC_APP_URL=
+NEXT_PUBLIC_SITE_URL=
 
-# CLERK
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
+# APPWRITE
+NEXT_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+NEXT_PUBLIC_APPWRITE_PROJECT=
+APPWRITE_DATABASE_ID=
+APPWRITE_USER_COLLECTION_ID=
+APPWRITE_BANK_COLLECTION_ID=
+APPWRITE_TRANSACTION_COLLECTION_ID=
+APPWRITE_SECRET=
 
-# DATABASE
-DATABASE_URL=
+# PLAID
+PLAID_CLIENT_ID=
+PLAID_SECRET=
+PLAID_ENV=
+PLAID_PRODUCTS=
+PLAID_COUNTRY_CODES=
 
-# AI
-GOOGLE_API_KEY=
+# DWOLLA
+DWOLLA_KEY=
+DWOLLA_SECRET=
+DWOLLA_BASE_URL=https://api-sandbox.dwolla.com
+DWOLLA_ENV=sandbox
 ```
 
 ### **Running the Project**
